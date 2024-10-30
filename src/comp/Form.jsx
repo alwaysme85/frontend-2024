@@ -17,7 +17,7 @@ const Form = () => {
 
     try {
       const response = await axios.post(
-        "https://backend-2024-pvka.onrender.com/api/submit/",
+        "https://backend-2024-pvka.onrender.com/api/submit",
         /* "http://localhost:5000/api/submit/", */
         userData
       );
