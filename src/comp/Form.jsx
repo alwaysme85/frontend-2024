@@ -22,7 +22,7 @@ const Form = () => {
         userData
       );
       //console.log(response);
-      console.log(response.data);
+      //console.log(response.data);
 
       //setDetails(response.data.details);
       setName("");
@@ -34,7 +34,7 @@ const Form = () => {
 
     //console.log("Clicked");
   };
-  //console.log(details);
+  console.log(details);
 
   return (
     <div>
