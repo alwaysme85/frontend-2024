@@ -21,7 +21,9 @@ const Form = () => {
         /* "http://localhost:5000/api/submit/", */
         userData
       );
-      setDetails(Array.isArray(response.data.details));
+      setDetails(
+        Array.isArray(response.data.details) ? response.data.details : []
+      );
       //console.log(response);
       //console.log(response.data);
 
@@ -76,14 +78,15 @@ const Form = () => {
         <br />
         <input type="submit" value="submit" onClick={handleSubmit} />
       </form>
-      {details.map((user) => {
-        return (
-          <div key={user._id}>
-            <p>{user.name}</p>
-            <p>{user.email}</p>
-          </div>
-        );
-      })}
+      {details.length > 0 &&
+        details.map((user) => {
+          return (
+            <div key={user._id}>
+              <p>{user.name}</p>
+              <p>{user.email}</p>
+            </div>
+          );
+        })}
     </div>
   );
 };
