@@ -22,9 +22,9 @@ const Form = () => {
         userData
       );
       //console.log(response);
-      //console.log(response.data);
+      console.log(response.data);
 
-      setDetails(response.data.details);
+      //setDetails(response.data.details);
       setName("");
       setEmail("");
       setPassword("");
