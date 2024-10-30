@@ -21,10 +21,10 @@ const Form = () => {
         /* "http://localhost:5000/api/submit/", */
         userData
       );
+      setDetails(response.data.details);
       //console.log(response);
       //console.log(response.data);
 
-      //setDetails(response.data.details);
       setName("");
       setEmail("");
       setPassword("");
@@ -34,7 +34,7 @@ const Form = () => {
 
     //console.log("Clicked");
   };
-  console.log(details);
+  //console.log(details);
 
   return (
     <div>
