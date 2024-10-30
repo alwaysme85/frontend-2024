@@ -22,6 +22,7 @@ const Form = () => {
       );
       //console.log(response);
       //console.log(response.data);
+
       setDetails(response.data.details);
       setName("");
       setEmail("");
@@ -29,8 +30,11 @@ const Form = () => {
     } catch (error) {
       console.log(error);
     }
+
     //console.log("Clicked");
   };
+  console.log(details);
+
   return (
     <div>
       <form>
