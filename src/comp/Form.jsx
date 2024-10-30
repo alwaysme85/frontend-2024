@@ -21,7 +21,7 @@ const Form = () => {
         /* "http://localhost:5000/api/submit/", */
         userData
       );
-      setDetails(response.data.details);
+      setDetails(Array.isArray(response.data.details));
       //console.log(response);
       //console.log(response.data);
 
@@ -30,6 +30,7 @@ const Form = () => {
       setPassword("");
     } catch (error) {
       console.log(error);
+      setDetails([]);
     }
 
     //console.log("Clicked");
